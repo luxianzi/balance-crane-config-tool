@@ -207,12 +207,12 @@ class MainWindow():
     def button_view_clicked(self):
         remote_file = self.entry_log_path.get()
         local_path = os.path.dirname(os.path.abspath(__file__))
-        """try:
+        try:
             with SCPClient(self.ssh.get_transport()) as scp:
                 scp.get(remote_file, local_path = local_path)
         except Exception as error:
             msgbox.showerror("错误", self.get_strerror(error))
-            return"""
+            return
         filename = os.path.join(local_path, os.path.basename(remote_file))
         LogWindow(self.main_window, filename = filename)
 
