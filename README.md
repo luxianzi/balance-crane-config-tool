@@ -1,4 +1,4 @@
-# Configurator
+ï»¿# Configurator
 
 ## Pre-requirement
 * Python 3.X
@@ -38,14 +38,14 @@ Used for define fields in remote config file. `param` is an array, here's one ex
 	[
 		{
 			"name": "SpeedStage_Set",
-			"description": "ËÙ¶ÈµÈ¼¶",
+			"description": "é€Ÿåº¦ç­‰çº§",
 			"type": "unsigned char",
 			"offset": 0,
 			"editable": true
 		},
 		{
 			"name": "Position_Add",
-			"description": "ÀÛ¼ÆÀï³Ì",
+			"description": "ç´¯è®¡é‡Œç¨‹",
 			"type": "double",
 			"offset": 1,
 			"editable": true
