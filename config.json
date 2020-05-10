@@ -1,0 +1,132 @@
+{
+	"remote":
+	{
+		"host": "192.168.0.100",
+		"username": "root",
+		"password": "",
+		"params_path": "/mnt/storage/Profile.txt",
+		"log_path": "/mnt/storage/Fault.txt"
+	},
+	"params":
+	[
+		{
+			"name": "SpeedStage_Set",
+			"description": "速度等级",
+			"type": "unsigned char",
+			"offset": 0,
+			"editable": true
+		},
+		{
+			"name": "Position_Add",
+			"description": "累计里程",
+			"type": "double",
+			"offset": 1,
+			"editable": true
+		},
+		{
+			"name": "High_Soft_Limit",
+			"description": "上限位",
+			"type": "double",
+			"offset": 9,
+			"editable": false
+		},
+		{
+			"name": "Low_Soft_Limit",
+			"description": "下限位",
+			"type": "double",
+			"offset": 17,
+			"editable": false
+		},
+		{
+			"name": "High_Speed_Limit",
+			"description": "上限速点",
+			"type": "double",
+			"offset": 25,
+			"editable": false
+		},
+		{
+			"name": "Low_Speed_Limit",
+			"description": "下限速点",
+			"type": "double",
+			"offset": 33,
+			"editable": false
+		},
+		{
+			"name": "Speed_Regain",
+			"description": "速度恢复点",
+			"type": "double",
+			"offset": 41,
+			"editable": false
+		},
+		{
+			"name": "Response_Speed",
+			"description": "响应速度",
+			"type": "unsigned char",
+			"offset": 49,
+			"editable": true
+		},
+		{
+			"name": "Sensor_Drift",
+			"description": "力传感器零漂",
+			"type": "double",
+			"offset": 50,
+			"editable": false
+		},
+		{
+			"name": "Force_Float",
+			"description": "最大过力限制",
+			"type": "unsigned char",
+			"offset": 58,
+			"editable": true
+		},
+		{
+			"name": "Bounce_Flag",
+			"description": "防反弹开关标志量",
+			"type": "unsigned char",
+			"offset": 59,
+			"editable": true
+		},
+		{
+			"name": "Sleep_Time",
+			"description": "待机休眠",
+			"type": "unsigned short",
+			"offset": 60,
+			"editable": true
+		},
+		{
+			"name": "Float_Sleep",
+			"description": "浮动跳出",
+			"type": "unsigned short",
+			"offset": 62,
+			"editable": true
+		},
+		{
+			"name": "Run_Time",
+			"description": "累计运行时间",
+			"type": "long",
+			"offset": 64,
+			"editable": false
+		},
+		{
+			"name": "Limit_Flag",
+			"description": "虚拟限位开关",
+			"type": "unsigned char",
+			"offset": 68,
+			"editable": true
+		},
+		{
+			"name": "Handle_Drift",
+			"description": "手柄传感器零漂",
+			"type": "double",
+			"offset": 69,
+			"editable": false
+		},
+		{
+			"name": "Position_Add_Sum",
+			"description": "当前次里程数据",
+			"type": "double",
+			"offset": 77,
+			"editable": true
+		}
+	]
+}
