@@ -1,5 +1,9 @@
-/Profile.txt
 /.settings
 /.project
 /.pydevproject
+/dist
+/__pycache__
+/build
+/Profile.txt
 /Fault.txt
+/*.spec
