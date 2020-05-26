@@ -134,7 +134,6 @@ class MainWindow():
         self.state = "connecting"
         self.update_button_state(self.state)
         ssh = SSHClient()
-        ssh.load_system_host_keys()
         ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
         try:
             ssh.connect(self.entry_host.get(), username = self.entry_user.get(), password = self.entry_password.get())
